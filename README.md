@@ -18,3 +18,4 @@ U-net เป็นการทำ image segmentation คือเป้าหม
 ในส่วน Decoder
 - จะ transposed convolution ทำให้ image ใหญ้ขึ้น + ในชั้นเดียวกันจะใช้ skip connection เอาภาพจาก encoder ในชั้นเดียวกันมาช่วยทำด้วยเพราะหลังผ่าน encoder- bottle neck มาอาจทำให้มีบาง detail จาก feature ดั้งเดิมหลุดไปเลยจะเอาตรงนี้มาช่วยทำด้วย
 
+ในส่วนของ dataset ส่วนที่เป็น train- test จะมีทั้ง feature กัย label => มันจะมีตัวที่ segmented มาอยุ่เเล้ว เเล้วมันจะไปเรียนรู้เองตอน conv ไม่ต้องปรับไรเองเเบบทำ edge detection
